@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./CSS/pag2.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="titulo">Formulário de cadastro para participar do codando</h1>
+      <p class="sub">Informe seus dados</p>
+      <br />
+    </div>
+    <form>
+      <fieldset class="grupo" id="primeiroGrupo">
+        <div class="campo" id="gNome">
+          <input
+            type="text"
+            name="nome"
+            placeholder="Nome"
+            id="nome"
+            required
+          />
+        </div>
+        <div class="campo" id="gSobrenome">
+          <input
+            type="text"
+            name="sobrenome"
+            placeholder="Sobrenome"
+            id="sobrenome"
+            required
+          />
+        </div>
+      </fieldset>
+      <div class="campo">
+        <label for="email"><strong>Email</strong></label>
+        <input
+          type="email"
+          name="email"
+          placeholder="seuemail@email.com"
+          id="email"
+          required
+        />
+      </div>
+      <div class="campo">
+        <label for="telefone"><strong>Telefone</strong></label>
+        <input
+          type="text"
+          name="telefone"
+          placeholder="(00) 0000-0000"
+          data-mask="(00) 0000-0000"
+          data-mask-selectonfocus="true"
+        />
+      </div>
+      <button class="botao" type="submit" onsubmit="">Concluído</button>
+    </form>
+    <footer class="rodape">
+      Copyright (c) 2021 Henrique Novaes .Todos os direitos reservados
+    </footer>
+  </body>
+</html>
